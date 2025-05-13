@@ -40,7 +40,7 @@ public abstract class User {
     }
     public abstract void displayDashboard();
     public abstract boolean canBorrowBooks();
-   
+    public abstract void returnBook(String bookTitle);
     static String totalUsers() {
         // Assuming we have a static variable to keep track of total users
         return "Total Users: " + totalUsers;
@@ -52,4 +52,5 @@ public abstract class User {
         totalUsers++;
         return "User - " + totalUsers; 
     }
+    
 }
